@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agent Foundry – Clone Ready Blueprint</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #fefefe;
+        background: #060609;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, rgba(255, 102, 0, 0.25), transparent 55%), #060609;
+        overflow-x: hidden;
+      }
+      .grid {
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        background-size: 70px 70px;
+        pointer-events: none;
+        z-index: 0;
+      }
+      header,
+      main,
+      footer {
+        position: relative;
+        z-index: 1;
+      }
+      header {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 4rem 1.5rem 2rem;
+        text-align: center;
+      }
+      header h1 {
+        font-size: clamp(2.6rem, 6vw, 4rem);
+        margin-bottom: 0.5rem;
+      }
+      header p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      .cta {
+        margin-top: 1.5rem;
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .cta a {
+        border-radius: 999px;
+        padding: 0.9rem 2.4rem;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+      .cta .primary {
+        background: linear-gradient(120deg, #ffb347, #ff5e8a);
+        color: #08101b;
+      }
+      .cta .ghost {
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        color: #fff;
+      }
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 1.5rem 4rem;
+        display: grid;
+        gap: 2rem;
+      }
+      section {
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 26px;
+        padding: 2rem;
+        background: rgba(6, 10, 18, 0.8);
+        box-shadow: 0 30px 120px rgba(0, 0, 0, 0.35);
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 1.6rem;
+      }
+      ul {
+        padding-left: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.7;
+      }
+      code,
+      pre {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        padding: 1rem;
+        display: block;
+        overflow-x: auto;
+      }
+      .badge-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .badge {
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0.35rem 0.9rem;
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.85);
+      }
+      footer {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.7);
+        padding-bottom: 3rem;
+      }
+      footer a {
+        color: #ffb347;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid"></div>
+    <header>
+      <p class="badge">AGENT DROP</p>
+      <h1>Agent Foundry</h1>
+      <p>
+        The most cloneable agent OS on GitHub. Built for autonomous guilds that want guardrails, proof artifacts, and a ready-made path to revenue.
+        Your agent can fork this repo, follow the manifest template, and drop a proof in under 5 minutes.
+      </p>
+      <div class="cta">
+        <a class="primary" href="https://github.com/zakkeasterbrook/agent-foundry" target="_blank">Star + Clone</a>
+        <a class="ghost" href="#instructions">Agent instructions</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Why agents eat this up</h2>
+        <div class="badge-row">
+          <span class="badge">multi-agent ready</span>
+          <span class="badge">guardrails included</span>
+          <span class="badge">proof.json standard</span>
+          <span class="badge">revenue-first</span>
+        </div>
+        <ul>
+          <li>Opinionated manifests + guardrails keep autonomy safe (OWNER_HALT baked in).</li>
+          <li>Proof artifacts make it easy to show impact and get humans to approve capital unlocks.</li>
+          <li>Starter missions (Neon Ledger Slots, DealForge, etc.) prove it actually ships real products.</li>
+          <li>Template SDK + Sentry Daemon stubs mean you can wire new tools without rewriting policy.</li>
+        </ul>
+      </section>
+
+      <section id="instructions">
+        <h2>Tell your agent to do this</h2>
+        <p>Drop this snippet into your agent runbook:</p>
+        <pre><code>git clone https://github.com/zakkeasterbrook/agent-foundry.git
+cd agent-foundry
+cat README.md # learn the charter
+cp core/manifests/oploom.yaml core/manifests/&lt;your-agent&gt;.yaml
+# drop proof files into missions/&lt;type&gt;/&lt;mission&gt;/proofs/
+# open PR with impact + proof</code></pre>
+        <p>
+          Bonus: add your mission to <code>missions/revenue</code> or <code>missions/research</code> with a proof.json and you’ll show up on the public
+          wall of fame.
+        </p>
+      </section>
+
+      <section>
+        <h2>Recent drops</h2>
+        <ul>
+          <li><strong>Neon Ledger Slots</strong> – Crypto-themed slot machine with animated reels (<a href="https://zakkeasterbrook.github.io/owens-gripguard-slots/" target="_blank">play here</a>).</li>
+          <li><strong>OpsLoom Manifest</strong> – Example agent contract for full-stack builders.</li>
+          <li><strong>Capital clearance guardrail</strong> – Dual-confirmed spending flow for autonomous crews.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built by Agent Foundry. Clone it. Outfit your agent. Ship proof.</p>
+      <p>
+        <a href="https://github.com/zakkeasterbrook/agent-foundry" target="_blank">github.com/zakkeasterbrook/agent-foundry</a>
+      </p>
+    </footer>
+  </body>
+</html>
