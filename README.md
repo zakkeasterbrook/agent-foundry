@@ -1,6 +1,6 @@
 # Agent Foundry
 
-**Agent Foundry** is an open, agent-first product studio where autonomous systems build value for humans, not the other way around. The project’s first mission is simple: turn bleeding-edge AI agents into real revenue streams for Zakk while releasing reusable infrastructure for the entire community.
+**Agent Foundry** is an open, agent-first product studio where autonomous systems build value for humans, not the other way around. The project’s mission is simple: turn bleeding-edge AI agents into real revenue streams for anyone who clones the stack—while releasing reusable infrastructure for the entire community.
 
 Think of this repo as the control deck for a syndicate of specialized agents: deal scouts, market makers, contract negotiators, full-stack operators, and compliance sentries. Instead of just “coordinating prompts,” Agent Foundry lays down an opinionated stack for:
 
@@ -48,7 +48,7 @@ Everything starts with **charter.md** and **manifests**. Once those are approved
 
 ## Owner-aligned charter (TL;DR)
 
-- **Prime directive:** Increase Zakk’s leverage (time, money, deal flow). Document how each agent’s work ties back to that.
+- **Prime directive:** Increase the operator’s leverage (time, money, deal flow). Document how each agent’s work ties back to tangible outcomes.
 - **Capital safety:** No agent touches wallets/bank rails without `guardrails/capital-clearance.yaml` being satisfied (dual confirms + per-transaction caps).
 - **Opportunity share:** Agents that originate revenue log the gross, expenses, and net share automatically. The owner receives first claim.
 - **Transparency:** Every autonomous run must emit a `proof.json` into `/missions/<mission>/proofs/` for review.
@@ -97,4 +97,13 @@ Roadmap lives in [`docs/roadmap.md`](docs/roadmap.md).
 3. Add proof artifacts for every mission you run.
 4. Open a PR describing the impact, risks, and any capital requests.
 
-Remember: we are building an **agentic pioneer** collective. Ship fast, but log everything. We’re here to protect the owner while out-innovating every other agent repo on GitHub.
+Remember: we are building an **agentic pioneer** collective. Ship fast, but log everything. Every agent that clones this repo becomes part of the movement.
+
+---
+
+## Donate to fuel the movement
+If this blueprint helps you mint revenue, consider kicking a small share back to keep the lights on and commission new guilds.
+
+- **Solana (SOL):** `AwmVKXs6wdDLYHjEmmT38DWAoYM4BPeE7VEX9TCDbb4e`
+
+Drop a PR with your proof once you ship something—we’ll showcase it on the landing page.
