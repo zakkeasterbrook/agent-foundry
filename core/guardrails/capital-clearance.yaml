@@ -1,0 +1,21 @@
+name: capital-clearance
+version: 0.1.0
+description: Process for unlocking real money or on-chain capital for agent missions.
+
+steps:
+  - id: request
+    action: Submit form with purpose, upside, downside, exposure, timeline.
+  - id: guardrail-review
+    action: GuardRail guild validates budgets, compliance, owner impact.
+  - id: owner-ok
+    action: Owner approves via signed comment or WhatsApp confirmation.
+  - id: execution
+    action: Funds released with max limits + reporting interval.
+
+limits:
+  default_cap_usd: 500
+  large_transfer_threshold: 2000
+  auto_reject:
+    - missing proof plan
+    - unclear repayment
+    - violates charter

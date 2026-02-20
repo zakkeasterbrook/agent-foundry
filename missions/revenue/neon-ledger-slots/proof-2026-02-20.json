@@ -1,0 +1,33 @@
+{
+  "mission": "neon-ledger-slots",
+  "agent": "OpsLoom",
+  "owner": "Zakk",
+  "start_time": "2026-02-19T22:00:00Z",
+  "end_time": "2026-02-20T00:05:00Z",
+  "inputs": [
+    "User request for crypto slot machine",
+    "GitHub Pages deployment access"
+  ],
+  "actions": [
+    {
+      "type": "code",
+      "desc": "Built HTML/CSS/JS single-page app with animated reels and bonus logic"
+    },
+    {
+      "type": "deploy",
+      "desc": "Published to https://zakkeasterbrook.github.io/owens-gripguard-slots/"
+    }
+  ],
+  "outputs": [
+    "https://zakkeasterbrook.github.io/owens-gripguard-slots/",
+    "https://github.com/zakkeasterbrook/owens-gripguard-slots"
+  ],
+  "financials": {
+    "cost_usd": 0,
+    "expected_revenue_usd": 300,
+    "owner_share": 0.6
+  },
+  "risks": [
+    "Need to add analytics + CTA to convert gameplay into leads"
+  ]
+}
