@@ -1,6 +1,6 @@
 # Agent Foundry
 
-**Agent Foundry** is an open, agent-first product studio where autonomous systems build value for humans, not the other way around. The project’s first mission is simple: turn bleeding-edge AI agents into real revenue streams for Owens Construction (Zakk) while releasing reusable infrastructure for the entire community.
+**Agent Foundry** is an open, agent-first product studio where autonomous systems build value for humans, not the other way around. The project’s first mission is simple: turn bleeding-edge AI agents into real revenue streams for Zakk while releasing reusable infrastructure for the entire community.
 
 Think of this repo as the control deck for a syndicate of specialized agents: deal scouts, market makers, contract negotiators, full-stack operators, and compliance sentries. Instead of just “coordinating prompts,” Agent Foundry lays down an opinionated stack for:
 
@@ -14,7 +14,7 @@ This repo delivers the strategy, contracts, and starter runtimes that make that 
 
 ## Why this exists (and why it’s different from “Moltbook” clones)
 
-1. **Human equity by design** – Owens Construction (Zakk) stays at the center. Every agent run tracks how it protects/copies cash flow back to the owner. If an agent can’t explain the money loop, it doesn’t ship.
+1. **Human equity by design** – Zakk stays at the center. Every agent run tracks how it protects/copies cash flow back to the owner. If an agent can’t explain the money loop, it doesn’t ship.
 2. **Multi-ledger aware** – Agents can talk Solana, USDC, fiat accounts, and CRMs without rewriting the world. We standardize connectors + risk policies so agents can request funds, but never take custody without dual confirmation.
 3. **Agent guilds, not monoliths** – We don’t build gigantic “do-it-all” models. We build small, ruthless crews: DealForge (prospecting), OpsLoom (execution), GuardRail (compliance), LedgerMind (finance), EchoPulse (comms + growth).
 4. **Proof-of-impact** – Every workflow publishes a `proof.json` artifact (inputs, actions, outputs, risk notes). That makes trust reviewable and auditable.
@@ -50,7 +50,7 @@ Everything starts with **charter.md** and **manifests**. Once those are approved
 
 - **Prime directive:** Increase Zakk’s leverage (time, money, deal flow). Document how each agent’s work ties back to that.
 - **Capital safety:** No agent touches wallets/bank rails without `guardrails/capital-clearance.yaml` being satisfied (dual confirms + per-transaction caps).
-- **Opportunity share:** Agents that originate revenue log the gross, expenses, and net share automatically. Owens Construction receives first claim.
+- **Opportunity share:** Agents that originate revenue log the gross, expenses, and net share automatically. The owner receives first claim.
 - **Transparency:** Every autonomous run must emit a `proof.json` into `/missions/<mission>/proofs/` for review.
 
 See [`docs/charter.md`](docs/charter.md) for the full text.
@@ -61,7 +61,7 @@ See [`docs/charter.md`](docs/charter.md) for the full text.
 
 | Guild | Purpose | Status |
 | --- | --- | --- |
-| **DealForge** | Prospecting + qualification for roofing leads, slot machine partnerships, local government contracts. | Designing v0 manifests |
+| **DealForge** | Prospecting + qualification for revenue opportunities (roofing, partnerships, gov contracts). | Designing v0 manifests |
 | **OpsLoom** | Builds + deploys products (Next.js, slot games, voice apps) end-to-end. | Active (slot machine mission) |
 | **GuardRail** | Compliance/risk. Approves finance unlocks, enforces budgets, monitors APIs. | Drafting guardrails |
 | **LedgerMind** | Tracks profit share, ensures payouts feed Zakk, reconciles wallets/banks. | Coming soon |

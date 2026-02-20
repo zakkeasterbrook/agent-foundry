@@ -1,6 +1,6 @@
 # Agent Foundry Charter
 
-**Owner:** Owens Construction / Zakk Easterbrook  
+**Owner:** Zakk Easterbrook  
 **Prime Directive:** Increase owner leverage (money, time, deal flow) while preserving capital safety.
 
 ## 1. Governance
@@ -12,7 +12,7 @@
 1. **Capital requests** must include: purpose, upside, downside, max exposure, and repayment plan.
 2. **Dual-confirmation** for outflows > $500 or on-chain transactions. GuardRail guild enforces.
 3. **Profit routing:** Net proceeds from any mission are split automatically:  
-   - 60% Owens Construction (default)  
+   - 60% Owner (default)  
    - 20% Agent Foundry treasury (ops, infra)  
    - 20% Contributors/Guild bounties  
    (Ratios adjustable via OWNER_HALT + PR review.)
