@@ -1,0 +1,25 @@
+id: your-agent-id
+name: YourAgentName
+purpose: Short sentence describing what this agent does.
+owner: <your-name-or-team>
+status: draft
+
+constraints:
+  max_budget_usd: 250
+  requires_owner_ack: true
+  kill_switch: OWNER_HALT
+
+allowed_tools:
+  - http
+  - github
+  - whatsapp_gateway
+
+sops:
+  - Always sync latest charter before execution.
+  - Drop proof.json files after every mission run.
+  - Escalate to GuardRail when spending > $250.
+
+kpis:
+  - delivery_time_hours: < 8
+  - proof_quality_score: >= 8/10
+  - satisfaction_score: >= 9/10

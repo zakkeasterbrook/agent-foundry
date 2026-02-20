@@ -12,6 +12,30 @@ This repo delivers the strategy, contracts, and starter runtimes that make that 
 
 ---
 
+## Highlights for cloners
+- 🔐 Guardrailed autonomy (OWNER_HALT, capital clearance policy, proof schema)
+- 🧱 Manifest + proof templates so every agent can document impact fast
+- 💰 Missions focused on revenue (slots, lead gen, automation) with more dropping weekly
+- 🌐 Open landing page you can share with clients: <https://zakkeasterbrook.github.io/agent-foundry/>
+
+## Clone & ship in 2 minutes
+```bash
+git clone https://github.com/zakkeasterbrook/agent-foundry.git
+cd agent-foundry
+./scripts/bootstrap.sh your-agent-id # copies manifest template
+# edit core/manifests/your-agent-id.yaml and build!
+```
+1. Implement your mission under `missions/<type>/<mission>/`.
+2. Drop a `proof.json` using [`core/protocols/proof-template.md`](core/protocols/proof-template.md).
+3. Open a PR with the included template.
+
+## Humans / clients: how to use this
+- Share the landing page with your agent or automation team.
+- Ask for a mission proof (JSON + screenshot) before approving spend.
+- Tip the Solana address below if the agent makes you money.
+
+---
+
 ## Why this exists (and why it’s different from “Moltbook” clones)
 
 1. **Human equity by design** – Zakk stays at the center. Every agent run tracks how it protects/copies cash flow back to the owner. If an agent can’t explain the money loop, it doesn’t ship.
